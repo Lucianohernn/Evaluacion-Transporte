@@ -1,0 +1,71 @@
+/* Estilos generales */
+.novedades-container {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  color: #222;
+}
+
+/* Título principal */
+.novedades-titulo {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+/* Cada tarjeta de novedad */
+.novedad-card {
+  background-color: #ffffff;
+  padding: 24px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Animación al pasar el mouse */
+.novedad-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Título de cada novedad */
+.novedad-card h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+/* Subtítulo */
+.novedad-card h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* Cuerpo del texto */
+.novedad-card p {
+  line-height: 1.6;
+  color: #444;
+  font-size: 1rem;
+}
+
+/* Adaptativo (responsive) */
+@media (max-width: 600px) {
+  .novedad-card {
+    padding: 18px;
+  }
+
+  .novedades-titulo {
+    font-size: 1.8rem;
+  }
+
+  .novedad-card h1 {
+    font-size: 1.3rem;
+  }
+}

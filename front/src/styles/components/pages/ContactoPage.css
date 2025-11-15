@@ -1,0 +1,122 @@
+/* Contenedor general */
+.contacto-container {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  color: #222;
+}
+
+@media (max-width: 800px) {
+  .contacto-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tarjeta del formulario */
+.contacto-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contacto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.contacto-titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Campos del formulario */
+.formulario .campo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.formulario input,
+.formulario textarea {
+  border: none;
+  border-radius: 10px;
+  background: #f5f6fa;
+  padding: 12px 14px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  box-shadow: 0 0 0 2px #007bff33;
+}
+
+/* Botón moderno */
+.btn-enviar {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #0056d8;
+  transform: translateY(-1px);
+}
+
+.btn-enviar:disabled {
+  background-color: #9db9e8;
+  cursor: not-allowed;
+}
+
+/* Mensaje de estado */
+.msg {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Sección de información */
+.contacto-info {
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contacto-info h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contacto-info ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.contacto-info li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
